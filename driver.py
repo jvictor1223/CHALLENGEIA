@@ -40,9 +40,10 @@ def placeMoves():
 # - makeMove
 # - removeMove
 
+end = timer()
+print(end - start)
 
 if __name__ == "__main__":
     placeMoves()
     b.print()
-end = timer()
-print(end - start)
+
