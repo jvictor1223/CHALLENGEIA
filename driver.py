@@ -1,5 +1,3 @@
-#JOAO CALIXTO
-
 from wsgiref.validate import validator
 from timeit import default_timer as timer
 
@@ -42,8 +40,6 @@ def placeMoves():
 
 end = timer()
 print(end - start)
-
 if __name__ == "__main__":
     placeMoves()
     b.print()
-

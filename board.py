@@ -1,9 +1,7 @@
-#JOAO CALIXTO
-
 class Board():
 
     ##########################################
-    ####   Constroi o tabuleiro          ####
+    ####      Constroi o tabuleiro        ####
     ##########################################
     def __init__(self, n):
         self.n = n
@@ -100,7 +98,7 @@ class Board():
     #retorna o espaço correspondente # com base na linha e coluna indexada-0
     #retorna -1 se o espaço esta fora do tabuleiro
     # e.g.
-    # rcToSpace(3,4) # the space at row 3, coluna 4
+    # rcToSpace(3,4) # espaço linha 3, coluna 4
     # > 28           # espaço correspondente em um 8x8
     def rcToSpace(self, row, col):
         space = row * self.n + col
