@@ -1,13 +1,13 @@
 from wsgiref.validate import validator
-from timeit import default_timer as timer
 
 import board
 
 #Tabuleiro a ser manipulado
 
 
-slots = int(input("Número de espaços no tabuleiro(ixj): "))
-start = timer()
+#slots = int(input("Número de espaços no tabuleiro(ixj): "))
+slots = 8
+
 b = board.Board(slots)
 
 #retorna TRUE se o tabuleiro existir a possibilidade de N queens e deixa b.queenspaces completas com espaço apropriado FALSE caso o contrario
@@ -38,8 +38,11 @@ def placeMoves():
 # - makeMove
 # - removeMove
 
-end = timer()
-print(end - start)
+
+
+
+
+
 if __name__ == "__main__":
     placeMoves()
     b.print()
